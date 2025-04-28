@@ -1,88 +1,10 @@
+嘿，朋友！
 
-## Introduction
-[![Build Status](https://www.travis-ci.org/openmessaging/dledger.svg?branch=master)](https://www.travis-ci.org/search/dledger) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.openmessaging.storage/dledger/badge.svg)](http://search.maven.org/#search%7Cga%7C1%7Copenmessaging-storage-dledger)  [![Coverage Status](https://coveralls.io/repos/github/openmessaging/openmessaging-storage-dledger/badge.svg?branch=master)](https://coveralls.io/github/openmessaging/openmessaging-storage-dledger?branch=master) [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
+注意到你们的项目最近的 GitHub Star 数增长得非常快，而这个增长看起来不是那么自然。短时间内这么多 star、几乎没有对应的 issue、PR 或社区互动，挺容易让人觉得这种刷星现象像是有意而为。说实话，这很打击真正用心做开源的人啊，因为行业里大家都希望通过真实而健康的方式吸引关注，而不是挂羊头卖狗肉。
 
-A raft-based java library for building high-available, high-durable, strong-consistent commitlog, which could act as the persistent layer for distributed storage system, i.e. messaging, streaming, kv, db, etc.
+我们都明白，每个人都期望自己的项目红红火火，但刷星这种事情反而会折损信任感，也对未来的 reputation（业界声誉）有潜在威胁。希望你们理解，占用了大家想发现优质项目的公共空间，我们感觉挺遗憾。实验一次可能觉得“小事儿”，但边际信任一旦折旧，会摊得更公式蔡。
 
-Dledger has added many new features that are not described in the [original paper](https://raft.github.io/raft.pdf). It has been proven to be a true production ready product. 
+期待你们对这个事情诚实回应并清理问题，在避免未来纠纷的同时，也能维护 Github 开源氛围。嘿，能够道歉和面对问题的人，更容易赢得深度支持哦！
 
-
-## Features
-
-* Leader election
-* Preferred leader election
-* [Pre-vote protocol](https://web.stanford.edu/~ouster/cgi-bin/papers/OngaroPhD.pdf)
-* High performance, high reliable storage support
-* Parallel log replication between leader and followers
-* Asynchronous replication
-* State machine
-* Multi-Raft
-* High tolerance of symmetric network partition
-* High tolerance of asymmetric network partition
-* [Jepsen verification with fault injection](https://github.com/openmessaging/openmessaging-dledger-jepsen)
-
-### New features waiting to be added ###
-* Snapshot (working in progress)
-* Dynamic membership & configuration change
-* SSL/TLS support
-
-## Quick Start
-
-### Prerequisite
-
-* 64bit JDK 1.8+
-
-* Maven 3.2.x
-
-### How to Build
-
-```
-mvn clean install -DskipTests
-```
-
-### Run Command Line
-
- * Get Command Usage
-```
-java -jar command/target/DLedger.jar
-
-```
-
-* Start DLedger Server
-```
-nohup java -jar command/target/DLedger.jar server &
-
-```
-
-* Append Data to DLedger
-```
-java -jar command/target/DLedger.jar append -d "Hello World"
-
-```
-
-* Get Data from DLedger
-```
-
-java -jar command/target/DLedger.jar get -i 0
-
-```
-
-## Contributing
-We always welcome new contributions, whether for trivial cleanups, big new features. We are always interested in adding new contributors. What we look for are series of contributions, good taste and ongoing interest in the project. If you are interested in becoming a committer, please let one of the existing committers know and they can help you walk through the process.
-
-## License
-[Apache License, Version 2.0](https://github.com/openmessaging/openmessaging-storage-dledger/blob/master/LICENSE) Copyright (C) Apache Software Foundation
- 
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fopenmessaging%2Fopenmessaging-storage-dledger.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fopenmessaging%2Fopenmessaging-storage-dledger?ref=badge_large)
-
-
-
-
-
-
-
-
-
-
-
+加油啊！相信社区化 & peer-generated resource seed 初心, 挺你懂得 😉 !
 
